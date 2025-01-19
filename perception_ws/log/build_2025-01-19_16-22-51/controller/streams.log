@@ -1,0 +1,25 @@
+[0.700s] Invoking command in '/home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/src/controller': PYTHONPATH=/home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/build/controller/build install --record /home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/build/controller/install.log --single-version-externally-managed install_data
+[0.918s] running egg_info
+[0.933s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[0.933s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[0.933s] deleting ../../build/controller/controller.egg-info/entry_points.txt
+[0.933s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[0.933s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[0.959s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[0.959s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[0.959s] running build
+[0.959s] running build_py
+[0.959s] copying controller/takeoff_and_land.py -> /home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/build/controller/build/lib/controller
+[0.960s] copying controller/camera.py -> /home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/build/controller/build/lib/controller
+[0.960s] copying controller/__init__.py -> /home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/build/controller/build/lib/controller
+[0.960s] running install
+[0.965s] running install_lib
+[0.974s] running install_data
+[0.974s] copying resource/controller -> /home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/install/controller/share/ament_index/resource_index/packages
+[0.974s] copying package.xml -> /home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/install/controller/share/controller
+[0.974s] running install_egg_info
+[0.988s] removing '/home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.989s] Copying ../../build/controller/controller.egg-info to /home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[0.989s] running install_scripts
+[1.102s] writing list of installed files to '/home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/build/controller/install.log'
+[1.122s] Invoked command in '/home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/src/controller' returned '0': PYTHONPATH=/home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/build/controller/build install --record /home/conor/Documents/aero2025/ros_workspace_2025/perception_ws/build/controller/install.log --single-version-externally-managed install_data

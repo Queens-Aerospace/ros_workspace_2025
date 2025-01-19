@@ -1,0 +1,201 @@
+[0.063s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.063s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a91a2b2b3a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a91a2b2ada0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a91a2b2ada0>>, mixin_verb=('build',))
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.146s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zephra/ros_workspace_2025/perception_ws'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controller' with type 'ros.ament_python' and name 'controller'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.174s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/zephra/ros_workspace_2025/perception_ws/install
+[0.175s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zephra/ros_workspace_2025/perception_ws/build/controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zephra/ros_workspace_2025/perception_ws/install/controller', 'merge_install': False, 'path': '/home/zephra/ros_workspace_2025/perception_ws/src/controller', 'symlink_install': False, 'test_result_base': None}
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.193s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.193s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zephra/ros_workspace_2025/perception_ws/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs', 'merge_install': False, 'path': '/home/zephra/ros_workspace_2025/perception_ws/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.193s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.194s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.194s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zephra/ros_workspace_2025/perception_ws/src/controller' with build type 'ament_python'
+[0.194s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'ament_prefix_path')
+[0.196s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/ament_prefix_path.ps1'
+[0.197s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/ament_prefix_path.dsv'
+[0.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/ament_prefix_path.sh'
+[0.197s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.197s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.199s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zephra/ros_workspace_2025/perception_ws/src/px4_msgs' with build type 'ament_cmake'
+[0.199s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zephra/ros_workspace_2025/perception_ws/src/px4_msgs'
+[0.199s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.199s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.338s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zephra/ros_workspace_2025/perception_ws/src/controller'
+[0.338s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.338s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.350s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zephra/ros_workspace_2025/perception_ws/build/px4_msgs': CMAKE_PREFIX_PATH=/home/zephra/ros_workspace_2025/perception_ws/install/controller:/opt/ros/humble /usr/bin/cmake /home/zephra/ros_workspace_2025/perception_ws/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs
+[0.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zephra/ros_workspace_2025/perception_ws/src/controller': PYTHONPATH=/home/zephra/ros_workspace_2025/perception_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zephra/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/zephra/ros_workspace_2025/perception_ws/build/controller/build install --record /home/zephra/ros_workspace_2025/perception_ws/build/controller/install.log --single-version-externally-managed install_data
+[0.706s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zephra/ros_workspace_2025/perception_ws/src/controller' returned '0': PYTHONPATH=/home/zephra/ros_workspace_2025/perception_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zephra/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/zephra/ros_workspace_2025/perception_ws/build/controller/build install --record /home/zephra/ros_workspace_2025/perception_ws/build/controller/install.log --single-version-externally-managed install_data
+[0.707s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/controller' for CMake module files
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/controller' for CMake config files
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/controller/lib'
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/controller/bin'
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/controller/lib/pkgconfig/controller.pc'
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages'
+[0.709s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'pythonpath')
+[0.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/pythonpath.ps1'
+[0.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/pythonpath.dsv'
+[0.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/pythonpath.sh'
+[0.710s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/controller/bin'
+[0.710s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller)
+[0.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/controller/package.ps1'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/controller/package.dsv'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/controller/package.sh'
+[0.711s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/controller/package.bash'
+[0.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/controller/package.zsh'
+[0.712s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zephra/ros_workspace_2025/perception_ws/install/controller/share/colcon-core/packages/controller)
+[2.588s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zephra/ros_workspace_2025/perception_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/home/zephra/ros_workspace_2025/perception_ws/install/controller:/opt/ros/humble /usr/bin/cmake /home/zephra/ros_workspace_2025/perception_ws/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs
+[2.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zephra/ros_workspace_2025/perception_ws/build/px4_msgs': CMAKE_PREFIX_PATH=/home/zephra/ros_workspace_2025/perception_ws/install/controller:/opt/ros/humble /usr/bin/cmake --build /home/zephra/ros_workspace_2025/perception_ws/build/px4_msgs -- -j12 -l12
+[185.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zephra/ros_workspace_2025/perception_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/home/zephra/ros_workspace_2025/perception_ws/install/controller:/opt/ros/humble /usr/bin/cmake --build /home/zephra/ros_workspace_2025/perception_ws/build/px4_msgs -- -j12 -l12
+[185.595s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zephra/ros_workspace_2025/perception_ws/build/px4_msgs': CMAKE_PREFIX_PATH=/home/zephra/ros_workspace_2025/perception_ws/install/controller:/opt/ros/humble /usr/bin/cmake --install /home/zephra/ros_workspace_2025/perception_ws/build/px4_msgs
+[186.480s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[186.480s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs' for CMake module files
+[186.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zephra/ros_workspace_2025/perception_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=/home/zephra/ros_workspace_2025/perception_ws/install/controller:/opt/ros/humble /usr/bin/cmake --install /home/zephra/ros_workspace_2025/perception_ws/build/px4_msgs
+[186.481s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs' for CMake config files
+[186.486s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[186.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[186.487s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[186.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[186.489s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/lib'
+[186.489s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[186.489s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[186.490s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[186.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[186.490s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/bin'
+[186.491s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[186.491s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/lib/python3.10/site-packages'
+[186.491s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/bin'
+[186.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.ps1'
+[186.492s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.dsv'
+[186.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.sh'
+[186.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.bash'
+[186.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.zsh'
+[186.494s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[186.494s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[186.494s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs' for CMake module files
+[186.495s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs' for CMake config files
+[186.497s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[186.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[186.498s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[186.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[186.499s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/lib'
+[186.499s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[186.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[186.499s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[186.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[186.499s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/bin'
+[186.500s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[186.500s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/lib/python3.10/site-packages'
+[186.500s] Level 1:colcon.colcon_core.environment:checking '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/bin'
+[186.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.ps1'
+[186.500s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.dsv'
+[186.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.sh'
+[186.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.bash'
+[186.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.zsh'
+[186.502s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zephra/ros_workspace_2025/perception_ws/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[186.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[186.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[186.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[186.502s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[186.507s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[186.508s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[186.508s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[186.521s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[186.521s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zephra/ros_workspace_2025/perception_ws/install/local_setup.ps1'
+[186.523s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zephra/ros_workspace_2025/perception_ws/install/_local_setup_util_ps1.py'
+[186.524s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zephra/ros_workspace_2025/perception_ws/install/setup.ps1'
+[186.525s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zephra/ros_workspace_2025/perception_ws/install/local_setup.sh'
+[186.525s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zephra/ros_workspace_2025/perception_ws/install/_local_setup_util_sh.py'
+[186.525s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zephra/ros_workspace_2025/perception_ws/install/setup.sh'
+[186.526s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zephra/ros_workspace_2025/perception_ws/install/local_setup.bash'
+[186.527s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zephra/ros_workspace_2025/perception_ws/install/setup.bash'
+[186.527s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zephra/ros_workspace_2025/perception_ws/install/local_setup.zsh'
+[186.528s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zephra/ros_workspace_2025/perception_ws/install/setup.zsh'

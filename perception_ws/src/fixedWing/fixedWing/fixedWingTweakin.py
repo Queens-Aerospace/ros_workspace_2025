@@ -38,10 +38,11 @@ class OffboardControl(Node):
         self.offboard_setpoint_counter = 0
         self.vehicle_local_position = VehicleLocalPosition()
         self.vehicle_status = VehicleStatus()
-        self.takeoff_height = -5.0
-
+        self.takeoff_height = -35.0
 
         self.start = True
+        self.offboard = False
+        self.landing = False
 
         # Create a timer to publish control commands
         self.timer = self.create_timer(0.1, self.timer_callback)
@@ -74,30 +75,34 @@ class OffboardControl(Node):
 
     def takeoff(self):
         self.publish_vehicle_command(VehicleCommand.VEHICLE_CMD_NAV_TAKEOFF,
-                                     param7=15.0)
+                                     param5=44.287,
+                                     param6=-76.4242,
+                                     param7=-self.takeoff_height)
         self.get_logger().info("Switching to takeoff mode")
 
     def land(self):
         """Switch to land mode."""
-        self.publish_vehicle_command(VehicleCommand.VEHICLE_CMD_NAV_LAND)
+        self.publish_vehicle_command(VehicleCommand.VEHICLE_CMD_NAV_LAND,
+                                     param4=0.0)
+                                    # param5=44.287,
+                                    # param6=-76.4242)
         self.get_logger().info("Switching to land mode")
 
     def publish_offboard_control_heartbeat_signal(self):
         """Publish the offboard control mode."""
         msg = OffboardControlMode()
         msg.position = True
-        msg.velocity = False
+        msg.velocity = True
         msg.acceleration = False
         msg.attitude = False
         msg.body_rate = False
         msg.timestamp = int(self.get_clock().now().nanoseconds / 1000)
         self.offboard_control_mode_publisher.publish(msg)
 
-    def publish_position_setpoint(self, x: float, y: float, z: float):
+    def publish_velocity_setpoint(self, x: float, y: float, z: float):
         """Publish the trajectory setpoint."""
         msg = TrajectorySetpoint()
-        msg.position = [x, y, z]
-        msg.yaw = 1.57079  # (90 degree)
+        msg.velocity = [x, y, z]
         msg.timestamp = int(self.get_clock().now().nanoseconds / 1000)
         self.trajectory_setpoint_publisher.publish(msg)
         self.get_logger().info(f"Publishing position setpoints {[x, y, z]}")
@@ -130,6 +135,17 @@ class OffboardControl(Node):
             self.arm()
             self.takeoff()
             
+        if self.vehicle_local_position.z <= self.takeoff_height+5.0 and not self.offboard:
+            self.get_logger().info(f"Reached target altitude.")
+            self.engage_offboard_mode()
+            self.offboard = True
+
+        self.publish_velocity_setpoint(0.0, 5.0, 0.0)
+        pos = [self.vehicle_local_position.x, self.vehicle_local_position.y, self.vehicle_local_position.z]
+        print(pos)
+
+        if self.vehicle_local_position.y >= 400.0:
+            self.land()
 
 
 def main(args=None) -> None:

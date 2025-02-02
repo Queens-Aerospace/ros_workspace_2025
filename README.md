@@ -14,6 +14,8 @@ To launch the Gazebo simulation:
 2. Run the following command:
    ```bash
    make px4_sitl gz_x500
+   # For plane
+   make px4_sitl gz_advanced_plane
    ```
 
 ### QGroundControl

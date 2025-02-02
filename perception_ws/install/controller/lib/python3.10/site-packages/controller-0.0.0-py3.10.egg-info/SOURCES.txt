@@ -10,6 +10,7 @@ setup.py
 controller/__init__.py
 controller/camera.py
 controller/takeoff_and_land.py
+controller/text.py
 resource/controller
 test/test_copyright.py
 test/test_flake8.py

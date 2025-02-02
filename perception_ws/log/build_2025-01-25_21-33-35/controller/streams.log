@@ -1,0 +1,24 @@
+[0.512s] Invoking command in '/home/zephra/ros_workspace_2025/perception_ws/src/controller': PYTHONPATH=/home/zephra/ros_workspace_2025/perception_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zephra/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/zephra/ros_workspace_2025/perception_ws/build/controller/build install --record /home/zephra/ros_workspace_2025/perception_ws/build/controller/install.log --single-version-externally-managed install_data
+[0.729s] running egg_info
+[0.730s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[0.730s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[0.730s] writing entry points to ../../build/controller/controller.egg-info/entry_points.txt
+[0.731s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[0.731s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[0.733s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[0.734s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[0.734s] running build
+[0.734s] running build_py
+[0.735s] copying controller/figure_8.py -> /home/zephra/ros_workspace_2025/perception_ws/build/controller/build/lib/controller
+[0.735s] running install
+[0.736s] running install_lib
+[0.737s] copying /home/zephra/ros_workspace_2025/perception_ws/build/controller/build/lib/controller/figure_8.py -> /home/zephra/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages/controller
+[0.737s] byte-compiling /home/zephra/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages/controller/figure_8.py to figure_8.cpython-310.pyc
+[0.740s] Sorry: IndentationError: expected an indented block after 'if' statement on line 184 (figure_8.py, line 185)
+[0.740s] running install_data
+[0.740s] running install_egg_info
+[0.742s] removing '/home/zephra/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.742s] Copying ../../build/controller/controller.egg-info to /home/zephra/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[0.744s] running install_scripts
+[0.769s] writing list of installed files to '/home/zephra/ros_workspace_2025/perception_ws/build/controller/install.log'
+[0.800s] Invoked command in '/home/zephra/ros_workspace_2025/perception_ws/src/controller' returned '0': PYTHONPATH=/home/zephra/ros_workspace_2025/perception_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zephra/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/zephra/ros_workspace_2025/perception_ws/build/controller/build install --record /home/zephra/ros_workspace_2025/perception_ws/build/controller/install.log --single-version-externally-managed install_data

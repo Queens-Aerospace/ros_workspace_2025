@@ -4,7 +4,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy, DurabilityPolicy
 from px4_msgs.msg import OffboardControlMode, TrajectorySetpoint, VehicleCommand, VehicleLocalPosition, VehicleStatus
-
+from geometry_msgs.msg import Twist
 
 class OffboardControl(Node):
     """Node for controlling a vehicle in offboard mode."""
@@ -27,7 +27,7 @@ class OffboardControl(Node):
             TrajectorySetpoint, '/fmu/in/trajectory_setpoint', qos_profile)
         self.vehicle_command_publisher = self.create_publisher(
             VehicleCommand, '/fmu/in/vehicle_command', qos_profile)
-
+        
         # Create subscribers
         self.vehicle_local_position_subscriber = self.create_subscription(
             VehicleLocalPosition, '/fmu/out/vehicle_local_position', self.vehicle_local_position_callback, qos_profile)
@@ -39,6 +39,9 @@ class OffboardControl(Node):
         self.vehicle_local_position = VehicleLocalPosition()
         self.vehicle_status = VehicleStatus()
         self.takeoff_height = -5.0
+
+
+        self.start = True
 
         # Create a timer to publish control commands
         self.timer = self.create_timer(0.1, self.timer_callback)
@@ -68,6 +71,11 @@ class OffboardControl(Node):
         self.publish_vehicle_command(
             VehicleCommand.VEHICLE_CMD_DO_SET_MODE, param1=1.0, param2=6.0)
         self.get_logger().info("Switching to offboard mode")
+
+    def takeoff(self):
+        self.publish_vehicle_command(VehicleCommand.VEHICLE_CMD_NAV_TAKEOFF,
+                                     param7=15.0)
+        self.get_logger().info("Switching to takeoff mode")
 
     def land(self):
         """Switch to land mode."""
@@ -117,23 +125,14 @@ class OffboardControl(Node):
         """Callback function for the timer."""
         self.publish_offboard_control_heartbeat_signal()
 
-        if self.offboard_setpoint_counter == 10:
-            self.engage_offboard_mode()
+        if self.start:
+            self.start = False
             self.arm()
-
-        if self.vehicle_local_position.z > self.takeoff_height and self.vehicle_status.nav_state == VehicleStatus.NAVIGATION_STATE_OFFBOARD:
-            self.publish_position_setpoint(0.0, 0.0, self.takeoff_height)
-
-        elif self.vehicle_local_position.z <= self.takeoff_height:
-            self.land()
-            exit(0)
-
-        if self.offboard_setpoint_counter < 11:
-            self.offboard_setpoint_counter += 1
+            self.takeoff()
+            
 
 
 def main(args=None) -> None:
-    print('Starting offboard control node...')
     rclpy.init(args=args)
     offboard_control = OffboardControl()
     rclpy.spin(offboard_control)

@@ -48,10 +48,12 @@ class FixedWingTakeoffControl(Node):
         self.current_nav_state = None
         self.flight_phase = 'INIT'  # States: INIT, ARMING, TAKEOFF, OFFBOARD_IDLE
         self.start_position = None
+        self.current_position = None
         self.takeoff_time = None
         self.transition_to_offboard = False
         self.offboard_setpoint_sent = False
         self.circle_angle = 0.0  # For generating circular flight pattern
+        self.rotations = 0
 
     def vehicle_status_callback(self, msg):
         """Monitor vehicle status for arming and flight modes"""
@@ -70,6 +72,7 @@ class FixedWingTakeoffControl(Node):
         if self.start_position is None and msg.xy_valid:
             self.start_position = [msg.x, msg.y, msg.z]
             self.get_logger().info(f"Start position recorded: X={msg.x:.2f}, Y={msg.y:.2f}, Z={msg.z:.2f}")
+        self.current_position = [msg.x, msg.y, msg.z]
 
     def timer_callback(self):
         """Execute the flight sequence based on current phase"""
@@ -128,12 +131,25 @@ class FixedWingTakeoffControl(Node):
                 self.set_offboard_mode()
             
             self.publish_offboard_control_mode()
-            self.publish_circle_setpoint()
-            
-            # Update circle angle for next iteration
-            self.circle_angle += 0.01
-            if self.circle_angle > 2 * math.pi:
-                self.circle_angle -= 2 * math.pi
+
+            if self.rotations < 2:
+                self.publish_circle_setpoint()
+                
+                # Update circle angle for next iteration
+                self.circle_angle += 0.01
+                if self.circle_angle > 2 * math.pi:
+                    self.circle_angle -= 2 * math.pi
+                    self.rotations += 1
+                    self.get_logger().info(f'Rotations: {self.rotations}')
+            else:
+                x, y, _ = self.start_position
+                x = x - 50
+                y = y - 200
+                z = 50.0
+                self.get_logger().info(f'Current location {self.current_position[0]:.2f}, {self.current_position[1]:.2f}, {self.current_position[2]:.2f}')
+                self.get_logger().info(f'Flying to {x:.2f}, {y:.2f}, {-z:.2f}')
+                self.publish_waypoint_setpoint(x, y, z)
+
 
     def arm_vehicle(self):
         """Send command to arm the vehicle"""
@@ -174,8 +190,8 @@ class FixedWingTakeoffControl(Node):
             return
             
         # Calculate position on circle
-        x = self.start_position[0] + self.idle_setpoint_distance + self.circle_radius * math.cos(self.circle_angle)
-        y = self.start_position[1] + self.circle_radius * math.sin(self.circle_angle)
+        x = 5 + self.start_position[0] + self.idle_setpoint_distance + self.circle_radius * math.cos(self.circle_angle)
+        y = 5 + self.start_position[1] + self.circle_radius * math.sin(self.circle_angle)
         
         msg = TrajectorySetpoint()
         
@@ -208,6 +224,9 @@ class FixedWingTakeoffControl(Node):
             y,  # Y coordinate in local frame
             -altitude  # Z coordinate (negative for altitude in NED frame)
         ]
+
+        # Explicitly set velocity to null but valid
+        msg.velocity = [float('nan'), float('nan'), float('nan')]
         
         msg.timestamp = int(self.get_clock().now().nanoseconds / 1000)
         self.trajectory_setpoint_publisher.publish(msg)

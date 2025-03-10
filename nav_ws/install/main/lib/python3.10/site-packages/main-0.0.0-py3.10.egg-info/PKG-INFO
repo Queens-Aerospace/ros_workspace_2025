@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: main
+Version: 0.0.0
+Summary: TODO: Package description
+Maintainer: em
+Maintainer-email: 22knc5@queensu.ca
+License: TODO: License declaration
+Requires-Dist: setuptools

@@ -1,0 +1,30 @@
+[0.440s] Invoking command in '/home/em/ros_workspace_2025/nav_ws/src/main': PYTHONPATH=/home/em/ros_workspace_2025/nav_ws/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/ros_workspace_2025/nav_ws/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/main build --build-base /home/em/ros_workspace_2025/nav_ws/build/main/build install --record /home/em/ros_workspace_2025/nav_ws/build/main/install.log --single-version-externally-managed install_data
+[0.541s] /home/em/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.542s]   warnings.warn(msg)
+[0.592s] running egg_info
+[0.601s] creating ../../build/main/main.egg-info
+[0.601s] writing ../../build/main/main.egg-info/PKG-INFO
+[0.601s] writing dependency_links to ../../build/main/main.egg-info/dependency_links.txt
+[0.602s] writing requirements to ../../build/main/main.egg-info/requires.txt
+[0.602s] writing top-level names to ../../build/main/main.egg-info/top_level.txt
+[0.602s] writing manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[0.620s] reading manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[0.621s] writing manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[0.621s] running build
+[0.621s] running build_py
+[0.621s] creating /home/em/ros_workspace_2025/nav_ws/build/main/build/lib/main
+[0.621s] copying main/__init__.py -> /home/em/ros_workspace_2025/nav_ws/build/main/build/lib/main
+[0.621s] running install
+[0.624s] running install_lib
+[0.632s] creating /home/em/ros_workspace_2025/nav_ws/install/main/lib/python3.10/site-packages/main
+[0.633s] copying /home/em/ros_workspace_2025/nav_ws/build/main/build/lib/main/__init__.py -> /home/em/ros_workspace_2025/nav_ws/install/main/lib/python3.10/site-packages/main
+[0.633s] byte-compiling /home/em/ros_workspace_2025/nav_ws/install/main/lib/python3.10/site-packages/main/__init__.py to __init__.cpython-310.pyc
+[0.633s] running install_data
+[0.633s] creating /home/em/ros_workspace_2025/nav_ws/install/main/share/ament_index/resource_index/packages
+[0.633s] copying resource/main -> /home/em/ros_workspace_2025/nav_ws/install/main/share/ament_index/resource_index/packages
+[0.633s] copying package.xml -> /home/em/ros_workspace_2025/nav_ws/install/main/share/main
+[0.633s] running install_egg_info
+[0.642s] Copying ../../build/main/main.egg-info to /home/em/ros_workspace_2025/nav_ws/install/main/lib/python3.10/site-packages/main-0.0.0-py3.10.egg-info
+[0.643s] running install_scripts
+[0.717s] writing list of installed files to '/home/em/ros_workspace_2025/nav_ws/build/main/install.log'
+[0.740s] Invoked command in '/home/em/ros_workspace_2025/nav_ws/src/main' returned '0': PYTHONPATH=/home/em/ros_workspace_2025/nav_ws/build/main/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/ros_workspace_2025/nav_ws/install/main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/main build --build-base /home/em/ros_workspace_2025/nav_ws/build/main/build install --record /home/em/ros_workspace_2025/nav_ws/build/main/install.log --single-version-externally-managed install_data

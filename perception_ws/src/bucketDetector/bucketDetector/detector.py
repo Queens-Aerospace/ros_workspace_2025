@@ -16,7 +16,7 @@ class BucketDetector(Node):
         self.lower_orange = np.array([5, 100, 100], dtype=np.uint8)
         self.upper_orange = np.array([15, 255, 255], dtype=np.uint8)
 
-        self.cap = cv2.VideoCapture(0)  # Open default webcam
+        self.cap = cv2.VideoCapture(6)  # Open default webcam
 
         if not self.cap.isOpened():
             self.get_logger().error("❌ Could not open webcam. Check if it's in use or properly connected.")

@@ -5,7 +5,7 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy, DurabilityPolicy
 from px4_msgs.msg import OffboardControlMode, TrajectorySetpoint, VehicleCommand, VehicleLocalPosition, VehicleStatus
 from std_msgs.msg import String
-
+import math
 class OffboardControl(Node):
     """Node for controlling a vehicle in offboard mode."""
 
@@ -42,7 +42,7 @@ class OffboardControl(Node):
         self.offboard_setpoint_counter = 0
         self.vehicle_local_position = VehicleLocalPosition()
         self.vehicle_status = VehicleStatus()
-        self.takeoff_height = -5.0
+        self.takeoff_height = -10.0
         self.bucket_state = ""
         self.state = 0
         # Create a timer to publish control commands
@@ -142,21 +142,23 @@ class OffboardControl(Node):
 
 
         if "MoveLeft" in bucket_items:
-            #self.publish_position_setpoint(self.vehicle_local_position.x, self.vehicle_local_position.y+0.3, self.vehicle_local_position.z)
-            y_offset +=0.3
+            #self.publish_position_setpoint(self.vehicle_local_position.x+0.2, self.vehicle_local_position.y, self.vehicle_local_position.z)
+            x_offset +=0.2
         if "MoveRight" in bucket_items:
-            #self.publish_position_setpoint(self.vehicle_local_position.x, self.vehicle_local_position.y-0.3, self.vehicle_local_position.z)
-            y_offset -=0.3
+            #self.publish_position_setpoint(self.vehicle_local_position.x-0.2, self.vehicle_local_position.y, self.vehicle_local_position.z)
+            x_offset -=0.2
         if "MoveUp" in bucket_items:
-            #self.publish_position_setpoint(self.vehicle_local_position.x+0.3, self.vehicle_local_position.y, self.vehicle_local_position.z)
-            x_offset +=0.3
+            #self.publish_position_setpoint(self.vehicle_local_position.x, self.vehicle_local_position.y+0.2, self.vehicle_local_position.z)
+            y_offset +=0.2
         if "MoveDown" in bucket_items:
-            #self.publish_position_setpoint(self.vehicle_local_position.x-0.3, self.vehicle_local_position.y, self.vehicle_local_position.z)
-            x_offset -=0.3
+            #self.publish_position_setpoint(self.vehicle_local_position.x, self.vehicle_local_position.y-0.2, self.vehicle_local_position.z)
+            y_offset -=0.2
         if "Closer" in bucket_items:
             z_offset +=0.2
             #self.publish_position_setpoint(self.vehicle_local_position.x, self.vehicle_local_position.y, self.vehicle_local_position.z+0.1)
-        
+        if x_offset > 0 and y_offset > 0:
+            x_offset /= math.sqrt(2)
+            y_offset /= math.sqrt(2)
         self.publish_position_setpoint(self.vehicle_local_position.x + x_offset, self.vehicle_local_position.y + y_offset, self.vehicle_local_position.z + z_offset)
         return
 
@@ -178,10 +180,10 @@ class OffboardControl(Node):
             #self.land()
             #exit(0)
 
-        elif self.state == 1:
+        if self.state == 1:
             self.bucket_landing()
 
-        elif self.state == 2:
+        if self.vehicle_local_position.z <= -1 and self.state == 1:
             self.land()
             exit(0)
 

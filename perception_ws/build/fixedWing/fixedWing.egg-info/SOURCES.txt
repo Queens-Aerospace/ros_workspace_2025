@@ -7,7 +7,6 @@ setup.py
 ../../build/fixedWing/fixedWing.egg-info/requires.txt
 ../../build/fixedWing/fixedWing.egg-info/top_level.txt
 ../../build/fixedWing/fixedWing.egg-info/zip-safe
-fixedWing/__init__.py
 fixedWing/fixedWingTakeOff.py
 resource/fixedWing
 test/test_copyright.py

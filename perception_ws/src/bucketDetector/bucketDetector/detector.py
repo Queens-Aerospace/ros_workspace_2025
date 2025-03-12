@@ -44,17 +44,17 @@ class BucketDetector(Node):
         move_x, move_y = "", ""
 
         if center_x < frame_center_x - 20:
-            move_x = "Move Left"
+            move_x = "MoveLeft"
         elif center_x > frame_center_x + 20:
-            move_x = "Move Right"
+            move_x = "MoveRight"
 
         if center_y < frame_center_y - 20:
-            move_y = "Move Up"
+            move_y = "MoveUp"
         elif center_y > frame_center_y + 20:
-            move_y = "Move Down"
+            move_y = "MoveDown"
 
         if not move_x and not move_y:
-            return "Centered, Now Move Closer"
+            return "Closer"
 
         return f"{move_x} {move_y}".strip()
 

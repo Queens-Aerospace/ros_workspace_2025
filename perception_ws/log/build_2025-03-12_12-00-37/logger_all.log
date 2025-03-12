@@ -1,0 +1,311 @@
+[0.063s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.063s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x71983415eec0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x719834120760>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x719834120760>>, mixin_verb=('build',))
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.085s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/em/keshavTest/ros_workspace_2025/perception_ws'
+[0.085s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.095s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/bucketDetector) by extensions ['ignore', 'ignore_ament_install']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/bucketDetector) by extension 'ignore'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/bucketDetector) by extension 'ignore_ament_install'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/bucketDetector) by extensions ['colcon_pkg']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/bucketDetector) by extension 'colcon_pkg'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/bucketDetector) by extensions ['colcon_meta']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/bucketDetector) by extension 'colcon_meta'
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/bucketDetector) by extensions ['ros']
+[0.096s] Level 1:colcon.colcon_core.package_identification:_identify(src/bucketDetector) by extension 'ros'
+[0.098s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bucketDetector' with type 'ros.ament_python' and name 'bucketDetector'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ignore', 'ignore_ament_install']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore_ament_install'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_pkg']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_pkg'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_meta']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_meta'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ros']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ros'
+[0.098s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controller' with type 'ros.ament_python' and name 'controller'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/fixedWing) by extensions ['ignore', 'ignore_ament_install']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/fixedWing) by extension 'ignore'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/fixedWing) by extension 'ignore_ament_install'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/fixedWing) by extensions ['colcon_pkg']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/fixedWing) by extension 'colcon_pkg'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/fixedWing) by extensions ['colcon_meta']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/fixedWing) by extension 'colcon_meta'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/fixedWing) by extensions ['ros']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(src/fixedWing) by extension 'ros'
+[0.099s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fixedWing' with type 'ros.ament_python' and name 'fixedWing'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.099s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.099s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.099s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.112s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.112s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.113s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/em/QADT2025/Nav2Workspace/install
+[0.113s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/em/QADT2025/NavWorkspace/install
+[0.114s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 275 installed packages in /opt/ros/humble
+[0.115s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.134s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'px4_msgs' is in: /home/em/QADT2025/NavWorkspace/install/px4_msgs, /home/em/QADT2025/Nav2Workspace/install/px4_msgs
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding px4_msgs
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'bucketDetector' build argument 'cmake_args' from command line to 'None'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'bucketDetector' build argument 'cmake_target' from command line to 'None'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'bucketDetector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'bucketDetector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'bucketDetector' build argument 'cmake_clean_first' from command line to 'False'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'bucketDetector' build argument 'cmake_force_configure' from command line to 'False'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'bucketDetector' build argument 'ament_cmake_args' from command line to 'None'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'bucketDetector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.134s] Level 5:colcon.colcon_core.verb:set package 'bucketDetector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.134s] DEBUG:colcon.colcon_core.verb:Building package 'bucketDetector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector', 'merge_install': False, 'path': '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/bucketDetector', 'symlink_install': False, 'test_result_base': None}
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_args' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.135s] DEBUG:colcon.colcon_core.verb:Building package 'controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller', 'merge_install': False, 'path': '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/controller', 'symlink_install': False, 'test_result_base': None}
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'fixedWing' build argument 'cmake_args' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'fixedWing' build argument 'cmake_target' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'fixedWing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'fixedWing' build argument 'cmake_clean_cache' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'fixedWing' build argument 'cmake_clean_first' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'fixedWing' build argument 'cmake_force_configure' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'fixedWing' build argument 'ament_cmake_args' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'fixedWing' build argument 'catkin_cmake_args' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'fixedWing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.135s] DEBUG:colcon.colcon_core.verb:Building package 'fixedWing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing', 'merge_install': False, 'path': '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/fixedWing', 'symlink_install': False, 'test_result_base': None}
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.135s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.135s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs', 'merge_install': False, 'path': '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.135s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.136s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.136s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/bucketDetector' with build type 'ament_python'
+[0.136s] Level 1:colcon.colcon_core.shell:create_environment_hook('bucketDetector', 'ament_prefix_path')
+[0.138s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector/hook/ament_prefix_path.ps1'
+[0.138s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector/hook/ament_prefix_path.dsv'
+[0.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector/hook/ament_prefix_path.sh'
+[0.139s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.139s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.141s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/controller' with build type 'ament_python'
+[0.141s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'ament_prefix_path')
+[0.141s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/ament_prefix_path.ps1'
+[0.141s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/ament_prefix_path.dsv'
+[0.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/ament_prefix_path.sh'
+[0.142s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.142s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.144s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/fixedWing' with build type 'ament_python'
+[0.144s] Level 1:colcon.colcon_core.shell:create_environment_hook('fixedWing', 'ament_prefix_path')
+[0.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing/hook/ament_prefix_path.ps1'
+[0.144s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing/hook/ament_prefix_path.dsv'
+[0.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing/hook/ament_prefix_path.sh'
+[0.145s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.145s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.147s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/px4_msgs' with build type 'ament_cmake'
+[0.147s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/px4_msgs'
+[0.147s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.147s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.267s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/bucketDetector'
+[0.267s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.267s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.393s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/controller'
+[0.393s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.393s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.508s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/fixedWing'
+[0.508s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.508s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/em/QADT2025/Nav2Workspace/install/TestWorkspace:/opt/ros/humble /usr/bin/cmake /home/em/keshavTest/ros_workspace_2025/perception_ws/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs
+[0.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/controller': PYTHONPATH=/home/em/keshavTest/ros_workspace_2025/perception_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/em/keshavTest/ros_workspace_2025/perception_ws/build/controller/build install --record /home/em/keshavTest/ros_workspace_2025/perception_ws/build/controller/install.log --single-version-externally-managed install_data
+[0.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/bucketDetector': PYTHONPATH=/home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/bucketDetector build --build-base /home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/build install --record /home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/install.log --single-version-externally-managed install_data
+[0.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/fixedWing': PYTHONPATH=/home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/fixedWing build --build-base /home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/build install --record /home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/install.log --single-version-externally-managed install_data
+[0.981s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/controller' returned '0': PYTHONPATH=/home/em/keshavTest/ros_workspace_2025/perception_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/em/keshavTest/ros_workspace_2025/perception_ws/build/controller/build install --record /home/em/keshavTest/ros_workspace_2025/perception_ws/build/controller/install.log --single-version-externally-managed install_data
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller' for CMake module files
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller' for CMake config files
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/lib'
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/bin'
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/lib/pkgconfig/controller.pc'
+[0.984s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages'
+[0.984s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'pythonpath')
+[0.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/pythonpath.ps1'
+[0.985s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/pythonpath.dsv'
+[0.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/controller/hook/pythonpath.sh'
+[0.985s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/bin'
+[0.985s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller)
+[0.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/controller/package.ps1'
+[0.986s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/controller/package.dsv'
+[0.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/controller/package.sh'
+[0.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/controller/package.bash'
+[0.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/controller/package.zsh'
+[0.987s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/em/keshavTest/ros_workspace_2025/perception_ws/install/controller/share/colcon-core/packages/controller)
+[1.000s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector' for CMake module files
+[1.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/bucketDetector' returned '0': PYTHONPATH=/home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/bucketDetector build --build-base /home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/build install --record /home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/install.log --single-version-externally-managed install_data
+[1.000s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector' for CMake config files
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/lib'
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/bin'
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/lib/pkgconfig/bucketDetector.pc'
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages'
+[1.001s] Level 1:colcon.colcon_core.shell:create_environment_hook('bucketDetector', 'pythonpath')
+[1.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector/hook/pythonpath.ps1'
+[1.002s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector/hook/pythonpath.dsv'
+[1.002s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector/hook/pythonpath.sh'
+[1.002s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/bin'
+[1.003s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bucketDetector)
+[1.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector/package.ps1'
+[1.003s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector/package.dsv'
+[1.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector/package.sh'
+[1.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector/package.bash'
+[1.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector/package.zsh'
+[1.005s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/colcon-core/packages/bucketDetector)
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing' for CMake module files
+[1.017s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/fixedWing' returned '0': PYTHONPATH=/home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/fixedWing build --build-base /home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/build install --record /home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/install.log --single-version-externally-managed install_data
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing' for CMake config files
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/lib'
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/bin'
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/lib/pkgconfig/fixedWing.pc'
+[1.017s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/lib/python3.10/site-packages'
+[1.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('fixedWing', 'pythonpath')
+[1.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing/hook/pythonpath.ps1'
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing/hook/pythonpath.dsv'
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing/hook/pythonpath.sh'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/bin'
+[1.018s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(fixedWing)
+[1.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing/package.ps1'
+[1.018s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing/package.dsv'
+[1.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing/package.sh'
+[1.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing/package.bash'
+[1.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing/package.zsh'
+[1.019s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/colcon-core/packages/fixedWing)
+[2.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/em/QADT2025/Nav2Workspace/install/TestWorkspace:/opt/ros/humble /usr/bin/cmake /home/em/keshavTest/ros_workspace_2025/perception_ws/src/px4_msgs -DCMAKE_INSTALL_PREFIX=/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs
+[2.810s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/em/QADT2025/Nav2Workspace/install/TestWorkspace:/opt/ros/humble /usr/bin/cmake --build /home/em/keshavTest/ros_workspace_2025/perception_ws/build/px4_msgs -- -j20 -l20
+[86.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/em/QADT2025/Nav2Workspace/install/TestWorkspace:/opt/ros/humble /usr/bin/cmake --build /home/em/keshavTest/ros_workspace_2025/perception_ws/build/px4_msgs -- -j20 -l20
+[90.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/em/QADT2025/Nav2Workspace/install/TestWorkspace:/opt/ros/humble /usr/bin/cmake --install /home/em/keshavTest/ros_workspace_2025/perception_ws/build/px4_msgs
+[90.987s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[90.987s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs' for CMake module files
+[90.987s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/em/QADT2025/Nav2Workspace/install/TestWorkspace:/opt/ros/humble /usr/bin/cmake --install /home/em/keshavTest/ros_workspace_2025/perception_ws/build/px4_msgs
+[90.987s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs' for CMake config files
+[90.987s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[90.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[90.988s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[90.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[90.988s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/lib'
+[90.988s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[90.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[90.989s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[90.989s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[90.989s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/bin'
+[90.989s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[90.989s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/lib/python3.10/site-packages'
+[90.989s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/bin'
+[90.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.ps1'
+[90.989s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.dsv'
+[90.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.sh'
+[90.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.bash'
+[90.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.zsh'
+[90.990s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[95.549s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[95.549s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs' for CMake module files
+[95.550s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs' for CMake config files
+[95.550s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[95.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[95.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[95.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[95.551s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/lib'
+[95.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[95.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[95.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[95.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[95.551s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/bin'
+[95.551s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[95.552s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/lib/python3.10/site-packages'
+[95.552s] Level 1:colcon.colcon_core.environment:checking '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/bin'
+[95.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.ps1'
+[95.552s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.dsv'
+[95.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.sh'
+[95.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.bash'
+[95.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/px4_msgs/package.zsh'
+[95.559s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/em/keshavTest/ros_workspace_2025/perception_ws/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[95.559s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[95.559s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[95.560s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[95.560s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[95.566s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[95.566s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[95.566s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[95.581s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[95.581s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/local_setup.ps1'
+[95.582s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/_local_setup_util_ps1.py'
+[95.583s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/setup.ps1'
+[95.584s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/local_setup.sh'
+[95.585s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/_local_setup_util_sh.py'
+[95.585s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/setup.sh'
+[95.586s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/local_setup.bash'
+[95.587s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/setup.bash'
+[95.587s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/local_setup.zsh'
+[95.590s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/setup.zsh'

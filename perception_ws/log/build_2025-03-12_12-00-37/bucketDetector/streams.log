@@ -1,0 +1,24 @@
+[0.636s] Invoking command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/bucketDetector': PYTHONPATH=/home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/bucketDetector build --build-base /home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/build install --record /home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/install.log --single-version-externally-managed install_data
+[0.715s] /home/em/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.715s]   warnings.warn(msg)
+[0.756s] running egg_info
+[0.763s] writing ../../build/bucketDetector/bucketDetector.egg-info/PKG-INFO
+[0.763s] writing dependency_links to ../../build/bucketDetector/bucketDetector.egg-info/dependency_links.txt
+[0.763s] writing entry points to ../../build/bucketDetector/bucketDetector.egg-info/entry_points.txt
+[0.764s] writing requirements to ../../build/bucketDetector/bucketDetector.egg-info/requires.txt
+[0.764s] writing top-level names to ../../build/bucketDetector/bucketDetector.egg-info/top_level.txt
+[0.771s] reading manifest file '../../build/bucketDetector/bucketDetector.egg-info/SOURCES.txt'
+[0.771s] writing manifest file '../../build/bucketDetector/bucketDetector.egg-info/SOURCES.txt'
+[0.771s] running build
+[0.771s] running install
+[0.774s] running install_data
+[0.774s] copying resource/bucketDetector -> /home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/ament_index/resource_index/packages
+[0.774s] copying package.xml -> /home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector
+[0.774s] running install_egg_info
+[0.788s] removing '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages/bucketDetector-0.0.0-py3.10.egg-info' (and everything under it)
+[0.788s] Copying ../../build/bucketDetector/bucketDetector.egg-info to /home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages/bucketDetector-0.0.0-py3.10.egg-info
+[0.789s] running install_scripts
+[0.847s] Installing bucket script to /home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/lib/bucketDetector
+[0.848s] Installing bucketDetector script to /home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/lib/bucketDetector
+[0.848s] writing list of installed files to '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/install.log'
+[0.863s] Invoked command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/bucketDetector' returned '0': PYTHONPATH=/home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/keshavTest/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/bucketDetector build --build-base /home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/build install --record /home/em/keshavTest/ros_workspace_2025/perception_ws/build/bucketDetector/install.log --single-version-externally-managed install_data

@@ -1,0 +1,21 @@
+[0.642s] Invoking command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/fixedWing': PYTHONPATH=/home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/fixedWing build --build-base /home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/build install --record /home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/install.log --single-version-externally-managed install_data
+[0.723s] /home/em/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.723s]   warnings.warn(msg)
+[0.765s] running egg_info
+[0.772s] writing ../../build/fixedWing/fixedWing.egg-info/PKG-INFO
+[0.772s] writing dependency_links to ../../build/fixedWing/fixedWing.egg-info/dependency_links.txt
+[0.772s] writing requirements to ../../build/fixedWing/fixedWing.egg-info/requires.txt
+[0.772s] writing top-level names to ../../build/fixedWing/fixedWing.egg-info/top_level.txt
+[0.780s] reading manifest file '../../build/fixedWing/fixedWing.egg-info/SOURCES.txt'
+[0.781s] writing manifest file '../../build/fixedWing/fixedWing.egg-info/SOURCES.txt'
+[0.781s] running build
+[0.781s] running install
+[0.783s] running install_data
+[0.783s] copying resource/fixedWing -> /home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/ament_index/resource_index/packages
+[0.783s] copying package.xml -> /home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/share/fixedWing
+[0.783s] running install_egg_info
+[0.798s] removing '/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/lib/python3.10/site-packages/fixedWing-0.0.0-py3.10.egg-info' (and everything under it)
+[0.798s] Copying ../../build/fixedWing/fixedWing.egg-info to /home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/lib/python3.10/site-packages/fixedWing-0.0.0-py3.10.egg-info
+[0.798s] running install_scripts
+[0.859s] writing list of installed files to '/home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/install.log'
+[0.872s] Invoked command in '/home/em/keshavTest/ros_workspace_2025/perception_ws/src/fixedWing' returned '0': PYTHONPATH=/home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/keshavTest/ros_workspace_2025/perception_ws/install/fixedWing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/fixedWing build --build-base /home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/build install --record /home/em/keshavTest/ros_workspace_2025/perception_ws/build/fixedWing/install.log --single-version-externally-managed install_data

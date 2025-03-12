@@ -1,0 +1,6 @@
+source;share/fixedWing/hook/pythonpath.ps1
+source;share/fixedWing/hook/pythonpath.dsv
+source;share/fixedWing/hook/pythonpath.sh
+source;share/fixedWing/hook/ament_prefix_path.ps1
+source;share/fixedWing/hook/ament_prefix_path.dsv
+source;share/fixedWing/hook/ament_prefix_path.sh

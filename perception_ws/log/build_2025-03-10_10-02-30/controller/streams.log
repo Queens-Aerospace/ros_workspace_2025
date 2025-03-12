@@ -1,0 +1,28 @@
+[1.723s] Invoking command in '/home/keshav/ros_workspace_2025/perception_ws/src/controller': PYTHONPATH=/home/keshav/ros_workspace_2025/perception_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/keshav/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/keshav/ros_workspace_2025/perception_ws/build/controller/build install --record /home/keshav/ros_workspace_2025/perception_ws/build/controller/install.log --single-version-externally-managed install_data
+[1.774s] /home/keshav/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[1.774s]   warnings.warn(msg)
+[1.784s] running egg_info
+[1.785s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[1.785s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[1.785s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[1.785s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[1.787s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[1.787s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[1.787s] running build
+[1.787s] running build_py
+[1.787s] copying controller/takeoff_and_land.py -> /home/keshav/ros_workspace_2025/perception_ws/build/controller/build/lib/controller
+[1.788s] copying controller/text.py -> /home/keshav/ros_workspace_2025/perception_ws/build/controller/build/lib/controller
+[1.788s] copying controller/camera.py -> /home/keshav/ros_workspace_2025/perception_ws/build/controller/build/lib/controller
+[1.788s] copying controller/plane_fly.py -> /home/keshav/ros_workspace_2025/perception_ws/build/controller/build/lib/controller
+[1.788s] copying controller/__init__.py -> /home/keshav/ros_workspace_2025/perception_ws/build/controller/build/lib/controller
+[1.788s] running install
+[1.796s] running install_lib
+[1.824s] running install_data
+[1.825s] copying resource/controller -> /home/keshav/ros_workspace_2025/perception_ws/install/controller/share/ament_index/resource_index/packages
+[1.825s] copying package.xml -> /home/keshav/ros_workspace_2025/perception_ws/install/controller/share/controller
+[1.825s] running install_egg_info
+[1.854s] removing '/home/keshav/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.854s] Copying ../../build/controller/controller.egg-info to /home/keshav/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages/controller-0.0.0-py3.10.egg-info
+[1.855s] running install_scripts
+[2.071s] writing list of installed files to '/home/keshav/ros_workspace_2025/perception_ws/build/controller/install.log'
+[2.110s] Invoked command in '/home/keshav/ros_workspace_2025/perception_ws/src/controller' returned '0': PYTHONPATH=/home/keshav/ros_workspace_2025/perception_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/keshav/ros_workspace_2025/perception_ws/install/controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/keshav/ros_workspace_2025/perception_ws/build/controller/build install --record /home/keshav/ros_workspace_2025/perception_ws/build/controller/install.log --single-version-externally-managed install_data

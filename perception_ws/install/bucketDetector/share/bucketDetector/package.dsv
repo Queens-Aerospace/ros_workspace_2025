@@ -1,0 +1,6 @@
+source;share/bucketDetector/hook/pythonpath.ps1
+source;share/bucketDetector/hook/pythonpath.dsv
+source;share/bucketDetector/hook/pythonpath.sh
+source;share/bucketDetector/hook/ament_prefix_path.ps1
+source;share/bucketDetector/hook/ament_prefix_path.dsv
+source;share/bucketDetector/hook/ament_prefix_path.sh

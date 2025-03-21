@@ -1,0 +1,41 @@
+/home/em/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/multi_drone/multi_drone.egg-info/PKG-INFO
+writing dependency_links to ../../build/multi_drone/multi_drone.egg-info/dependency_links.txt
+writing entry points to ../../build/multi_drone/multi_drone.egg-info/entry_points.txt
+writing requirements to ../../build/multi_drone/multi_drone.egg-info/requires.txt
+writing top-level names to ../../build/multi_drone/multi_drone.egg-info/top_level.txt
+reading manifest file '../../build/multi_drone/multi_drone.egg-info/SOURCES.txt'
+writing manifest file '../../build/multi_drone/multi_drone.egg-info/SOURCES.txt'
+running build
+running build_py
+copying multi_drone/__init__.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+copying multi_drone/multi_takeoff_7.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+copying multi_drone/multi_takeoff_1.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+copying multi_drone/multi_takeoff_5.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+copying multi_drone/multi_takeoff_8.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+copying multi_drone/multi_takeoff_6.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+copying multi_drone/multi_takeoff_2.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+copying multi_drone/multi_takeoff_4.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+copying multi_drone/multi_takeoff_3.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+running install
+running install_lib
+copying /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone/multi_takeoff_1.py -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone
+byte-compiling /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone/multi_takeoff_1.py to multi_takeoff_1.cpython-310.pyc
+running install_data
+copying resource/multi_drone -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/share/ament_index/resource_index/packages
+copying package.xml -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/share/multi_drone
+running install_egg_info
+removing '/home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/multi_drone/multi_drone.egg-info to /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone-0.0.0-py3.10.egg-info
+running install_scripts
+Installing multi_takeoff_1 script to /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/multi_drone
+Installing multi_takeoff_2 script to /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/multi_drone
+Installing multi_takeoff_3 script to /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/multi_drone
+Installing multi_takeoff_4 script to /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/multi_drone
+Installing multi_takeoff_5 script to /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/multi_drone
+Installing multi_takeoff_6 script to /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/multi_drone
+Installing multi_takeoff_7 script to /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/multi_drone
+Installing multi_takeoff_8 script to /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/multi_drone
+writing list of installed files to '/home/em/ros_workspace_2025/nav_ws/build/multi_drone/install.log'

@@ -1,0 +1,3 @@
+[console_scripts]
+bucket = bucketDetector.bucket:main
+bucketDetector = bucketDetector.bucketDetector:main

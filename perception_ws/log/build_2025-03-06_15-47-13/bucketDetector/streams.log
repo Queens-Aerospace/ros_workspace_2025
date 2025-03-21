@@ -1,0 +1,29 @@
+[0.711s] Invoking command in '/home/keshav/ros_workspace_2025/perception_ws/src/bucketDetector': PYTHONPATH=/home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bucketDetector build --build-base /home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/build install --record /home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/install.log --single-version-externally-managed install_data
+[0.853s] /home/keshav/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[0.853s]   warnings.warn(msg)
+[0.950s] running egg_info
+[0.966s] writing ../../build/bucketDetector/bucketDetector.egg-info/PKG-INFO
+[0.966s] writing dependency_links to ../../build/bucketDetector/bucketDetector.egg-info/dependency_links.txt
+[0.966s] writing entry points to ../../build/bucketDetector/bucketDetector.egg-info/entry_points.txt
+[0.967s] writing requirements to ../../build/bucketDetector/bucketDetector.egg-info/requires.txt
+[0.967s] writing top-level names to ../../build/bucketDetector/bucketDetector.egg-info/top_level.txt
+[1.001s] reading manifest file '../../build/bucketDetector/bucketDetector.egg-info/SOURCES.txt'
+[1.002s] writing manifest file '../../build/bucketDetector/bucketDetector.egg-info/SOURCES.txt'
+[1.002s] running build
+[1.003s] running build_py
+[1.003s] copying bucketDetector/bucketDetector.py -> /home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/build/lib/bucketDetector
+[1.003s] copying bucketDetector/__init__.py -> /home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/build/lib/bucketDetector
+[1.003s] running install
+[1.007s] running install_lib
+[1.025s] copying /home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/build/lib/bucketDetector/bucketDetector.py -> /home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages/bucketDetector
+[1.025s] byte-compiling /home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages/bucketDetector/bucketDetector.py to bucketDetector.cpython-310.pyc
+[1.026s] running install_data
+[1.026s] copying resource/bucketDetector -> /home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/share/ament_index/resource_index/packages
+[1.026s] copying package.xml -> /home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector
+[1.027s] running install_egg_info
+[1.045s] removing '/home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages/bucketDetector-0.0.0-py3.10.egg-info' (and everything under it)
+[1.045s] Copying ../../build/bucketDetector/bucketDetector.egg-info to /home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages/bucketDetector-0.0.0-py3.10.egg-info
+[1.046s] running install_scripts
+[1.185s] Installing bucket_detector script to /home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/lib/bucketDetector
+[1.185s] writing list of installed files to '/home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/install.log'
+[1.206s] Invoked command in '/home/keshav/ros_workspace_2025/perception_ws/src/bucketDetector' returned '0': PYTHONPATH=/home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/bucketDetector build --build-base /home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/build install --record /home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/install.log --single-version-externally-managed install_data

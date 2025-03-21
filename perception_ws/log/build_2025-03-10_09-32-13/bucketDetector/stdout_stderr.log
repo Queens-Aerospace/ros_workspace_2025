@@ -1,0 +1,27 @@
+/home/keshav/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/bucketDetector/bucketDetector.egg-info/PKG-INFO
+writing dependency_links to ../../build/bucketDetector/bucketDetector.egg-info/dependency_links.txt
+writing entry points to ../../build/bucketDetector/bucketDetector.egg-info/entry_points.txt
+writing requirements to ../../build/bucketDetector/bucketDetector.egg-info/requires.txt
+writing top-level names to ../../build/bucketDetector/bucketDetector.egg-info/top_level.txt
+reading manifest file '../../build/bucketDetector/bucketDetector.egg-info/SOURCES.txt'
+writing manifest file '../../build/bucketDetector/bucketDetector.egg-info/SOURCES.txt'
+running build
+running build_py
+copying bucketDetector/bucket.py -> /home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/build/lib/bucketDetector
+copying bucketDetector/bucketDetector.py -> /home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/build/lib/bucketDetector
+copying bucketDetector/__init__.py -> /home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/build/lib/bucketDetector
+running install
+running install_lib
+running install_data
+copying resource/bucketDetector -> /home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/share/ament_index/resource_index/packages
+copying package.xml -> /home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/share/bucketDetector
+running install_egg_info
+removing '/home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages/bucketDetector-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/bucketDetector/bucketDetector.egg-info to /home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/lib/python3.10/site-packages/bucketDetector-0.0.0-py3.10.egg-info
+running install_scripts
+Installing bucket script to /home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/lib/bucketDetector
+Installing bucketDetector script to /home/keshav/ros_workspace_2025/perception_ws/install/bucketDetector/lib/bucketDetector
+writing list of installed files to '/home/keshav/ros_workspace_2025/perception_ws/build/bucketDetector/install.log'

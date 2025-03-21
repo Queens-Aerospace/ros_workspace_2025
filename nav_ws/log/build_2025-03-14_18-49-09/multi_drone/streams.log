@@ -1,0 +1,54 @@
+[0.715s] Invoking command in '/home/em/ros_workspace_2025/nav_ws/src/multi_drone': PYTHONPATH=/home/em/ros_workspace_2025/nav_ws/build/multi_drone/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/multi_drone build --build-base /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build install --record /home/em/ros_workspace_2025/nav_ws/build/multi_drone/install.log --single-version-externally-managed install_data
+[0.818s] /home/em/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.818s]   warnings.warn(msg)
+[0.907s] running egg_info
+[0.915s] creating ../../build/multi_drone/multi_drone.egg-info
+[0.916s] writing ../../build/multi_drone/multi_drone.egg-info/PKG-INFO
+[0.916s] writing dependency_links to ../../build/multi_drone/multi_drone.egg-info/dependency_links.txt
+[0.916s] writing requirements to ../../build/multi_drone/multi_drone.egg-info/requires.txt
+[0.916s] writing top-level names to ../../build/multi_drone/multi_drone.egg-info/top_level.txt
+[0.916s] writing manifest file '../../build/multi_drone/multi_drone.egg-info/SOURCES.txt'
+[0.934s] reading manifest file '../../build/multi_drone/multi_drone.egg-info/SOURCES.txt'
+[0.935s] writing manifest file '../../build/multi_drone/multi_drone.egg-info/SOURCES.txt'
+[0.935s] running build
+[0.935s] running build_py
+[0.935s] creating /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+[0.935s] copying multi_drone/__init__.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+[0.935s] copying multi_drone/multi_takeoff_7.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+[0.935s] copying multi_drone/multi_takeoff_1.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+[0.935s] copying multi_drone/multi_takeoff_5.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+[0.935s] copying multi_drone/multi_takeoff_8.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+[0.935s] copying multi_drone/multi_takeoff_6.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+[0.936s] copying multi_drone/multi_takeoff_2.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+[0.936s] copying multi_drone/multi_takeoff_4.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+[0.936s] copying multi_drone/multi_takeoff_3.py -> /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone
+[0.936s] running install
+[0.939s] running install_lib
+[0.947s] creating /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone
+[0.947s] copying /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone/__init__.py -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone
+[0.947s] copying /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone/multi_takeoff_7.py -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone
+[0.948s] copying /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone/multi_takeoff_1.py -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone
+[0.948s] copying /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone/multi_takeoff_5.py -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone
+[0.948s] copying /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone/multi_takeoff_8.py -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone
+[0.948s] copying /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone/multi_takeoff_6.py -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone
+[0.948s] copying /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone/multi_takeoff_2.py -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone
+[0.948s] copying /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone/multi_takeoff_4.py -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone
+[0.948s] copying /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build/lib/multi_drone/multi_takeoff_3.py -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone
+[0.948s] byte-compiling /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone/__init__.py to __init__.cpython-310.pyc
+[0.948s] byte-compiling /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone/multi_takeoff_7.py to multi_takeoff_7.cpython-310.pyc
+[0.949s] byte-compiling /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone/multi_takeoff_1.py to multi_takeoff_1.cpython-310.pyc
+[0.950s] byte-compiling /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone/multi_takeoff_5.py to multi_takeoff_5.cpython-310.pyc
+[0.950s] byte-compiling /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone/multi_takeoff_8.py to multi_takeoff_8.cpython-310.pyc
+[0.951s] byte-compiling /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone/multi_takeoff_6.py to multi_takeoff_6.cpython-310.pyc
+[0.951s] byte-compiling /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone/multi_takeoff_2.py to multi_takeoff_2.cpython-310.pyc
+[0.952s] byte-compiling /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone/multi_takeoff_4.py to multi_takeoff_4.cpython-310.pyc
+[0.952s] byte-compiling /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone/multi_takeoff_3.py to multi_takeoff_3.cpython-310.pyc
+[0.953s] running install_data
+[0.953s] creating /home/em/ros_workspace_2025/nav_ws/install/multi_drone/share/ament_index/resource_index/packages
+[0.953s] copying resource/multi_drone -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/share/ament_index/resource_index/packages
+[0.953s] copying package.xml -> /home/em/ros_workspace_2025/nav_ws/install/multi_drone/share/multi_drone
+[0.953s] running install_egg_info
+[0.963s] Copying ../../build/multi_drone/multi_drone.egg-info to /home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages/multi_drone-0.0.0-py3.10.egg-info
+[0.964s] running install_scripts
+[1.043s] writing list of installed files to '/home/em/ros_workspace_2025/nav_ws/build/multi_drone/install.log'
+[1.060s] Invoked command in '/home/em/ros_workspace_2025/nav_ws/src/multi_drone' returned '0': PYTHONPATH=/home/em/ros_workspace_2025/nav_ws/build/multi_drone/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/em/ros_workspace_2025/nav_ws/install/multi_drone/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/multi_drone build --build-base /home/em/ros_workspace_2025/nav_ws/build/multi_drone/build install --record /home/em/ros_workspace_2025/nav_ws/build/multi_drone/install.log --single-version-externally-managed install_data

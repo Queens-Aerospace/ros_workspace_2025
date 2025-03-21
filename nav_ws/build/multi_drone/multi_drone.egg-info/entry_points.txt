@@ -1,0 +1,9 @@
+[console_scripts]
+multi_takeoff_1 = multi_drone.multi_takeoff_1:main
+multi_takeoff_2 = multi_drone.multi_takeoff_2:main
+multi_takeoff_3 = multi_drone.multi_takeoff_3:main
+multi_takeoff_4 = multi_drone.multi_takeoff_4:main
+multi_takeoff_5 = multi_drone.multi_takeoff_5:main
+multi_takeoff_6 = multi_drone.multi_takeoff_6:main
+multi_takeoff_7 = multi_drone.multi_takeoff_7:main
+multi_takeoff_8 = multi_drone.multi_takeoff_8:main

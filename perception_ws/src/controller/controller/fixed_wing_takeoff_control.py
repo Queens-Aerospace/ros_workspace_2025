@@ -3,9 +3,10 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy, DurabilityPolicy
-from px4_msgs.msg import OffboardControlMode, TrajectorySetpoint, VehicleCommand, VehicleStatus, VehicleLocalPosition
+from px4_msgs.msg import OffboardControlMode, TrajectorySetpoint, VehicleCommand, VehicleStatus, VehicleLocalPosition, SensorGps
 import math
 import time
+# import pyproj
 
 class FixedWingTakeoffControl(Node):
     def __init__(self):
@@ -32,6 +33,8 @@ class FixedWingTakeoffControl(Node):
             VehicleStatus, '/fmu/out/vehicle_status', self.vehicle_status_callback, qos_profile)
         self.local_position_subscriber = self.create_subscription(
             VehicleLocalPosition, '/fmu/out/vehicle_local_position', self.local_position_callback, qos_profile)
+        self.gps_position_subscriber = self.create_subscription(
+            SensorGps, '/fmu/out/vehicle_gps_position', self.gps_callback, qos_profile)
 
         # Timer for publishing control commands
         self.create_timer(0.1, self.timer_callback)  # 10Hz
@@ -54,6 +57,18 @@ class FixedWingTakeoffControl(Node):
         self.offboard_setpoint_sent = False
         self.circle_angle = 0.0  # For generating circular flight pattern
         self.rotations = 0
+        self.origin_lat = None
+        self.origin_lon = None
+        self.origin_alt = None
+
+        self.current_tgt = 0
+        self.targets = [
+            [-123.45, 234.56, 50.0],
+            [89.01, -456.78, 50.0],
+            [210.32, 98.76, 50.0],
+            [-50.67, -321.45, 50.0],
+            [150.89, 432.10, 50.0]
+        ]
 
     def vehicle_status_callback(self, msg):
         """Monitor vehicle status for arming and flight modes"""
@@ -73,6 +88,14 @@ class FixedWingTakeoffControl(Node):
             self.start_position = [msg.x, msg.y, msg.z]
             self.get_logger().info(f"Start position recorded: X={msg.x:.2f}, Y={msg.y:.2f}, Z={msg.z:.2f}")
         self.current_position = [msg.x, msg.y, msg.z]
+
+    def gps_callback(self, msg):
+        if self.origin_lat is None and self.origin_lon is None and self.origin_alt is None:
+            self.origin_lat = msg.latitude_deg
+            self.origin_lon = msg.longitude_deg
+            self.origin_alt = msg.altitude_msl_m
+            self.get_logger().info(f"Set GPS Origin: {self.origin_lat}, {self.origin_lon}, {self.origin_alt}")
+
 
     def timer_callback(self):
         """Execute the flight sequence based on current phase"""
@@ -142,14 +165,21 @@ class FixedWingTakeoffControl(Node):
                     self.rotations += 1
                     self.get_logger().info(f'Rotations: {self.rotations}')
             else:
-                x, y, _ = self.start_position
-                x = x - 50
-                y = y - 200
-                z = 50.0
-                self.get_logger().info(f'Current location {self.current_position[0]:.2f}, {self.current_position[1]:.2f}, {self.current_position[2]:.2f}')
-                self.get_logger().info(f'Flying to {x:.2f}, {y:.2f}, {-z:.2f}')
-                self.publish_waypoint_setpoint(x, y, z)
-
+                at_lat = round(self.targets[self.current_tgt][0], 2) - 2 <= round(self.current_position[0], 2) \
+                    and round(self.current_position[0], 2) <= round(self.targets[self.current_tgt][0], 2) + 2
+                at_lon = round(self.targets[self.current_tgt][1], 2) - 2 <= round(self.current_position[1], 2) \
+                    and round(self.current_position[1], 2) <= round(self.targets[self.current_tgt][1], 2) + 2
+                at_alt = round(self.targets[self.current_tgt][2], 2) - 4 <= round(self.current_position[2], 2) \
+                    and round(self.current_position[2], 2) <= round(self.targets[self.current_tgt][2], 2) + 4
+                
+                if not at_lat and not at_lon and not at_alt:
+                    self.get_logger().info(f'Current pos {self.current_position[0]:.2f}, {self.current_position[1]:.2f}, {self.current_position[2]:.2f}')
+                    self.get_logger().info(f'Flying to {self.targets[self.current_tgt]}')
+                    self.publish_waypoint_setpoint(*self.targets[self.current_tgt])
+                elif self.current_tgt < len(self.targets) - 1:   # Made it, go next
+                    self.current_tgt += 1
+                else:
+                    self.get_logger().info('REACHED ALL TARGETS!!!')
 
     def arm_vehicle(self):
         """Send command to arm the vehicle"""
@@ -172,6 +202,7 @@ class FixedWingTakeoffControl(Node):
         """Command the vehicle to enter offboard mode"""
         self.get_logger().info("Setting OFFBOARD mode")
         self.publish_vehicle_command(VehicleCommand.VEHICLE_CMD_DO_SET_MODE, param1=1.0, param2=6.0)
+
 
     def publish_offboard_control_mode(self):
         """Publish offboard control mode"""

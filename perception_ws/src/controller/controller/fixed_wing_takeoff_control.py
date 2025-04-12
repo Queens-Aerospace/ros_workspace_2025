@@ -37,12 +37,14 @@ class FixedWingTakeoffControl(Node):
             SensorGps, '/fmu/out/vehicle_gps_position', self.gps_callback, qos_profile)
 
         # Timer for publishing control commands
-        self.create_timer(0.1, self.timer_callback)  # 10Hz
+        self.time_increment = 0.1
+        self.create_timer(self.time_increment, self.timer_callback)  # 10Hz
 
         # Flight parameters
         self.cruise_altitude = 50.0  # meters - final cruise altitude
-        self.idle_setpoint_distance = 100.0  # meters - distance of idle circle center from takeoff position
-        self.circle_radius = 50.0  # meters - radius of the circle to fly
+        self.idle_setpoint_distance = 0.0  # meters - distance of idle circle center from takeoff position
+        self.circle_radius = 100.0  # meters - radius of the circle to fly
+        self.angle_increment = 0.015
         
         # State variables
         self.vehicle_status = None
@@ -63,11 +65,38 @@ class FixedWingTakeoffControl(Node):
 
         self.current_tgt = 0
         self.targets = [
-            [-123.45, 234.56, 50.0],
-            [89.01, -456.78, 50.0],
-            [210.32, 98.76, 50.0],
-            [-50.67, -321.45, 50.0],
-            [150.89, 432.10, 50.0]
+            [0.00, 0.00, 50.00],
+            [0.00, 110.00, 50.00],
+              [-10.00, 160.00, 50.00],
+            [-40.00, 110.00, 50.00],
+            [-40.00, -110.00, 50.00],
+              [-50.00, -160.00, 50.00],
+            [-80.00, -110.00, 50.00],
+            [-80.00, 110.00, 50.00],
+              [-30.00, 160.00, 50.00],
+            [0.00, 110.00, 50.00],
+            [0.00, -110.00, 50.00],
+              [10.00, -160.00, 50.00],
+            [40.00, -110.00, 50.00],
+            [40.00, 110.00, 50.00],
+              [50.00, 160.00, 50.00],
+            [80.00, 110.00, 50.00],
+            [80.00, -110.00, 50.00],
+              
+            [110.00, -80.00, 50.00],
+            [-110.00, -80.00, 50.00],
+              [-160.00, -70.00, 50.00],
+            [-110.00, -40.00, 50.00],
+            [110.00, -40.00, 50.00],
+              [160.00, -30.00, 50.00],
+            [110.00, 0.00, 50.00],
+            [-110.00, 0.00, 50.00],
+              [-160.00, 10.00, 50.00],
+            [-110.00, 40.00, 50.00],
+            [110.00, 40.00, 50.00],
+              [160.00, 50.00, 50.00],
+            [110.00, 80.00, 50.00],
+            [-110.00, 80.00, 50.00]
         ]
 
     def vehicle_status_callback(self, msg):
@@ -155,29 +184,31 @@ class FixedWingTakeoffControl(Node):
             
             self.publish_offboard_control_mode()
 
-            if self.rotations < 2:
+            if self.rotations < 3:
                 self.publish_circle_setpoint()
+                self.get_logger().info(f'Current pos {self.current_position[0]:.2f}, {self.current_position[1]:.2f}, {self.current_position[2]:.2f}')
                 
                 # Update circle angle for next iteration
-                self.circle_angle += 0.01
+                self.circle_angle += self.angle_increment
                 if self.circle_angle > 2 * math.pi:
                     self.circle_angle -= 2 * math.pi
                     self.rotations += 1
                     self.get_logger().info(f'Rotations: {self.rotations}')
-            else:
-                at_lat = round(self.targets[self.current_tgt][0], 2) - 2 <= round(self.current_position[0], 2) \
-                    and round(self.current_position[0], 2) <= round(self.targets[self.current_tgt][0], 2) + 2
-                at_lon = round(self.targets[self.current_tgt][1], 2) - 2 <= round(self.current_position[1], 2) \
-                    and round(self.current_position[1], 2) <= round(self.targets[self.current_tgt][1], 2) + 2
-                at_alt = round(self.targets[self.current_tgt][2], 2) - 4 <= round(self.current_position[2], 2) \
-                    and round(self.current_position[2], 2) <= round(self.targets[self.current_tgt][2], 2) + 4
+            else:   # 5 m give or take
+                at_lat = round(self.targets[self.current_tgt][0], 2) - 5 <= round(self.current_position[0], 2) \
+                    and round(self.current_position[0], 2) <= round(self.targets[self.current_tgt][0], 2) + 5
+                at_lon = round(self.targets[self.current_tgt][1], 2) - 5 <= round(self.current_position[1], 2) \
+                    and round(self.current_position[1], 2) <= round(self.targets[self.current_tgt][1], 2) + 5
+                at_alt = round(-self.targets[self.current_tgt][2], 2) - 3 <= round(self.current_position[2], 2) \
+                    and round(-self.current_position[2], 2) <= round(self.targets[self.current_tgt][2], 2) + 3
                 
-                if not at_lat and not at_lon and not at_alt:
+                if (not at_lat) or (not at_lon) or (not at_alt):
                     self.get_logger().info(f'Current pos {self.current_position[0]:.2f}, {self.current_position[1]:.2f}, {self.current_position[2]:.2f}')
                     self.get_logger().info(f'Flying to {self.targets[self.current_tgt]}')
                     self.publish_waypoint_setpoint(*self.targets[self.current_tgt])
                 elif self.current_tgt < len(self.targets) - 1:   # Made it, go next
                     self.current_tgt += 1
+                    # self.get_logger().info(f'Flying to {self.targets[self.current_tgt]}')
                 else:
                     self.get_logger().info('REACHED ALL TARGETS!!!')
 
@@ -221,8 +252,10 @@ class FixedWingTakeoffControl(Node):
             return
             
         # Calculate position on circle
-        x = 5 + self.start_position[0] + self.idle_setpoint_distance + self.circle_radius * math.cos(self.circle_angle)
-        y = 5 + self.start_position[1] + self.circle_radius * math.sin(self.circle_angle)
+        x = self.idle_setpoint_distance + self.circle_radius * math.cos(self.circle_angle)
+        y = self.circle_radius * math.sin(self.circle_angle)
+
+        self.get_logger().info(f'Circle point: {x:.2f}, {y:.2f}')
         
         msg = TrajectorySetpoint()
         
@@ -232,13 +265,13 @@ class FixedWingTakeoffControl(Node):
             y,  # Y position on circle
             -self.cruise_altitude  # Z - maintain cruise altitude
         ]
-        
+
         # We can also set velocity to help with the circle pattern
-        # These are optional and could be omitted
-        tangential_vel = 20.0  # m/s - adjust based on desired speed
+        angular_vel = self.angle_increment / self.time_increment  # rad / s
+        tangential_vel = self.circle_radius * angular_vel  # m/s
         msg.velocity = [
-            -tangential_vel * math.sin(self.circle_angle),  # vx
-            tangential_vel * math.cos(self.circle_angle),   # vy
+            tangential_vel * math.cos(self.circle_angle),   # vx
+            tangential_vel * math.sin(self.circle_angle),  # vy
             0.0  # vz - maintain altitude
         ]
         
